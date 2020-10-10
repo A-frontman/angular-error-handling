@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./second.component.scss']
 })
 export class SecondComponent {
-  public throwError(): void {
+
+  public tryToHandleError(): void {
+    try {
+      this.throwError();
+    } catch (e) {
+      console.warn('I catched an error inside my module, but still not know how to prcess it.');
+      throw e;
+    }
+  }
+
+  private throwError(): void {
     throw Error('Error in Second Module')
   }
 }
