@@ -12,7 +12,9 @@ import { GlobalErrorHandler } from './error-handler/global-error-handler';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FirstModule,
+    SecondModule
   ],
   providers: [
     { provide: ErrorHandler, useClass: GlobalErrorHandler }
