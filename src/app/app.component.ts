@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-error-handling';
+  public throwError(): void {
+    throw new Error('Example error to handle globally');
+  }
 }

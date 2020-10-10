@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-error-handling"
+    }
+  },
+  "defaultProject": "angular-error-handling",
+  "cli": {
+    "analytics": "4c000cbf-9375-4176-bc6e-8cb7a3976ec0"
+  }
 }
