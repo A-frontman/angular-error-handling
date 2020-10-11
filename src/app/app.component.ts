@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: `
+    <div style="margin: 40px">
+      <button (click)="throwError()">Throw Error</button>
+    </div>`,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
