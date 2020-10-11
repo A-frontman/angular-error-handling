@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `
+  template: `
     <div style="margin: 40px">
       <button (click)="throwError()">Throw Error</button>
-    </div>`
+    </div>
+    `
 })
 export class AppComponent {
   public throwError(): void {
