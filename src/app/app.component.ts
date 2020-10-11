@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: `
     <div style="margin: 40px">
       <button (click)="throwError()">Throw Error</button>
-    </div>`,
-  styleUrls: ['./app.component.scss']
+    </div>`
 })
 export class AppComponent {
   public throwError(): void {
